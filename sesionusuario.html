@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/sesionusuario.css">
+    <title>Iniciar sesion</title>
+    <style>
+        /* Estilos para el menú */
+        ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; }
+        li { float: left; }
+        li a { display: block; color: white; font-size: 30px; text-align: center; padding: 14px 16px; text-decoration: none; }
+        li a:hover { background-color: #111; }
+    </style>
+    <script>
+        function mostrarError() {
+            alert("Usuario incorrecto, intente de nuevo");
+        }
+    </script>
+</head>
+<body><div style="text-align: center;">
+    <h1>Inicia sesión como usuario</h1>
+        <form action="procesar_login.php" method="POST">
+            <h2>Usuario: <input type="text" name="nombredelacaja" required><br>
+            <button type="submit" name="iniciar" class="iniciar">Iniciar sesión</button>
+        </form>
+    </h2>
+    <h3>¿Eres nuevo?<br>Crea una cuenta ahora!!<br><br>
+        <a href="registroalum.html">
+            <button class="registro">Regístrate</button>
+        </a><br><br>
+    <a href="index.html">
+        <button class="volver">Volver</button>
+    </a></h3></div>
+</body>
+</html>
